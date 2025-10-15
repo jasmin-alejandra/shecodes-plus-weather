@@ -3,24 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Numans&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap"
+      rel="stylesheet"
+    />
     <title>Jasmin Weather App</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" />
-        <input type="submit" />
-      </form>
-    </header>
-    <main>
-      <h1>City</h1>
-      <h2>Temperature</h2>
-      <h3>weather icon</h3>
-      <h4>other details</h4>
-    </main>
-    <footer>
-      This project was coded by Jasmin Gonzalez, open-sourced on GitHub, and
-      hosted on Netlify.
-    </footer>
+    <div class="app-container">
+      <header>
+        <form>
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="enter-city"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div id="current-city">
+          <h1>Atlanta</h1>
+        </div>
+        <div id="current-temp">
+          <h2>Temperature °F</h2>
+        </div>
+        <div id="weather-icon"><h3>weather icon</h3></div>
+        <div>Day, Time, Conditions</div>
+        <div class="weather-details">Humidity, Wind</div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/jasmin-alejandra" target="_blank"
+          >Jasmin Gonzalez</a
+        >, open-sourced on
+        <a
+          href="https://github.com/jasmin-alejandra/shecodes-plus-weather"
+          target="_blank"
+          >GitHub</a
+        >, and hosted on
+        <a href="https://jasmin-weather.netlify.app/" target="_blank">Netlify</a
+        >.
+      </footer>
+    </div>
   </body>
 </html>

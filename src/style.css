@@ -1,0 +1,42 @@
+body {
+  background-color: white;
+  font-family: "Sofia Sans", sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  font-family: "Numans", sans-serif;
+  font-size: small;
+  padding: 20px 10px 10px;
+}
+
+.app-container {
+  background-color: yellow;
+  border-radius: 15px;
+  max-width: 60%;
+  margin: 30px auto;
+  padding: 30px;
+}
+
+.enter-city {
+}
+
+.search-button {
+}
+
+#current-city,
+#current-temp {
+  text-align: center;
+}
+
+#weather-icon {
+  text-align: left;
+}
+
+.weather-details {
+  text-align: right;
+}
