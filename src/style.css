@@ -1,5 +1,6 @@
 body {
-  background-color: white;
+  background-color: rgb(215, 247, 245, 0.8);
+  color: #2a6171;
   font-family: "Sofia Sans", sans-serif;
 }
 
@@ -7,36 +8,75 @@ header {
   text-align: center;
 }
 
+main {
+  color: #2a6171;
+}
 footer {
   text-align: center;
   font-family: "Numans", sans-serif;
-  font-size: small;
+  font-size: 12px;
   padding: 20px 10px 10px;
 }
 
+a {
+  color: #75cac3;
+}
+
 .app-container {
-  background-color: yellow;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 227, 128, 0.9) 0%,
+    rgb(250, 249, 241) 100%
+  );
   border-radius: 15px;
-  max-width: 60%;
+  max-width: 75%;
   margin: 30px auto;
   padding: 30px;
 }
 
 .enter-city {
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 5px 10px;
+  width: 75%;
 }
 
 .search-button {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  background-color: #75cac3;
+  margin-left: 10px;
+  padding: 5px 10px;
 }
 
-#current-city,
-#current-temp {
+.current-city {
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 20px;
   text-align: center;
 }
+.current-temp {
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 5px;
+  text-align: center;
+}
+.temp-unit {
+  font-size: 40px;
+}
 
-#weather-icon {
+.weather-icon {
   text-align: left;
 }
 
-.weather-details {
-  text-align: right;
+.current-weather {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
 }
