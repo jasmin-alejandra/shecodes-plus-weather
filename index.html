@@ -29,13 +29,19 @@
       </header>
       <main>
         <div class="current-city" id="current-city"></div>
-        <div class="current-temp" id="current-temp">
+        <div class="current-temp">
+          <span id="current-temp"></span>
           <span class="temp-unit">°F</span>
         </div>
         <div class="current-weather">
           <div class="weather-icon"><h3>weather icon</h3></div>
-          <div class="day">Day, Time, Conditions</div>
-          <div class="weather-details">Humidity: X% Wind: Xmph</div>
+          <div class="day">
+            <span id="time"></span><span id="condition"></span>
+          </div>
+          <div class="weather-details">
+            Humidity: <span id="humidity"></span> Wind:
+            <span id="wind"></span>
+          </div>
         </div>
       </main>
       <footer>
