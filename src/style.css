@@ -87,9 +87,20 @@ a {
   align-items: center;
   gap: 20px;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 #humidity,
 #wind {
   font-weight: normal;
+}
+
+.weather-forecast {
+  display: flex;
+  margin: 25px 0;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.forecast-high {
+  font-weight: bold;
 }
