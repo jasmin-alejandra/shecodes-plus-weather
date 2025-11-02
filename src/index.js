@@ -55,3 +55,24 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", searchSubmit);
 
 searchCity("Atlanta");
+
+function displayForecast() {
+  let days = ["Day One", "Day Two", "Day Three", "Day Four", "Day Five"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+        <div class="daily-forecast">
+        <div class="forecast-day">${day}</div>
+        <div class="forecast-icon">icon</div>
+        <div class="forecast-high">high temp</div>
+        <div class="forecast-low">low temp</div>
+        </div>`;
+  });
+  let forecastElement = document.querySelector("#weather-forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+
+displayForecast();
