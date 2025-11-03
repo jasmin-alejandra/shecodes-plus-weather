@@ -101,6 +101,9 @@ a {
   justify-content: space-around;
 }
 
+.forecast-icon {
+  max-width: 55px;
+}
 .forecast-high {
   font-weight: bold;
 }
