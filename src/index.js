@@ -15,6 +15,7 @@ function updateWeather(response) {
   humidityElement.innerHTML = `${response.data.temperature.humidity}%,  `;
   windElement.innerHTML = ` ${response.data.wind.speed}mph`;
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}">`;
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -56,7 +57,14 @@ searchForm.addEventListener("submit", searchSubmit);
 
 searchCity("Atlanta");
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "a02f35oaf431a4c16ab5t443397e311f";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=imperial`;
+  axios(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
   let days = ["Day One", "Day Two", "Day Three", "Day Four", "Day Five"];
   let forecastHtml = "";
 
@@ -74,5 +82,3 @@ function displayForecast() {
   let forecastElement = document.querySelector("#weather-forecast");
   forecastElement.innerHTML = forecastHtml;
 }
-
-displayForecast();
