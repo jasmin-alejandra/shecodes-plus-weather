@@ -52,22 +52,9 @@ function searchSubmit(event) {
   searchCity(searchInput.value);
 }
 
-let searchForm = document.querySelector("#search-form");
-searchForm.addEventListener("submit", searchSubmit);
-
-searchCity("Atlanta");
-
 function formatForecastDay(timestamp) {
   let date = new Date(timestamp * 1000);
-  let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   return days[date.getDay()];
 }
 
@@ -97,3 +84,8 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#weather-forecast");
   forecastElement.innerHTML = forecastHtml;
 }
+
+let searchForm = document.querySelector("#search-form");
+searchForm.addEventListener("submit", searchSubmit);
+
+searchCity("Atlanta");
