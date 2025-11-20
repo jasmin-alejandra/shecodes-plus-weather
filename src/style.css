@@ -30,9 +30,9 @@ a {
   );
   border-radius: 15px;
   box-shadow: 20px 20px 30px rgba(42, 97, 113, 0.2);
-  max-width: 65%;
+  max-width: 75%;
   margin: 30px auto;
-  padding: 30px;
+  padding: 25px;
 }
 
 .enter-city {
@@ -40,7 +40,7 @@ a {
   border-radius: 5px;
   font-size: 15px;
   padding: 5px 10px;
-  width: 65%;
+  width: 50%;
 }
 .search-button {
   border: none;
